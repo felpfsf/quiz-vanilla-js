@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz 2022</title>
-</head>
-<body>
-  <h1>Quiz</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Script -->
+    <script defer src="/js/script.js"></script>
+    <title>Quiz 2022</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="main-title">Quiz</h1>
+      <!-- Placar -->
+      <div class="score-container hidden">
+        <h2>Parabéns !</h2>
+        <p id="display-score"><span>90</span>%</p>
+        <p>
+          Você acertou <span id="correct-answers">0</span> de
+          <span id="total-questions">10</span> perguntas
+        </p>
+        <button id="restart-quiz">Reiniciar quiz!</button>
+      </div>
+      <!-- Perguntas -->
+      <div class="quiz-container">
+        <p id="question">
+          <span id="question-number">1</span> -
+          <span id="question-text">O que é o que é?</span>
+        </p>
+        <!-- Respostas Alternativas -->
+        <div class="answers-box">
+          <button>
+            <span id="btn-letter">A</span>
+            <span id="question-answer">Resposta correta é</span>
+          </button>
+          <button>
+            <span id="btn-letter">B</span>
+            <span id="question-answer">Resposta correta é</span>
+          </button>
+          <button>
+            <span id="btn-letter">C</span>
+            <span id="question-answer">Resposta correta é</span>
+          </button>
+          <button>
+            <span id="btn-letter">D</span>
+            <span id="question-answer">Resposta correta é</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Template de Resposta -->
+    <button class="answer-template hidden">
+      <span id="btn-letter">A</span>
+      <span id="question-answer">Resposta </span>
+    </button>
+  </body>
 </html>
