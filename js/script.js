@@ -100,7 +100,7 @@ function nextQuestion() {
     }
 
     createQuestion(actualQuestion)
-  }, 750)
+  }, 1250)
 }
 
 function endGame() {
