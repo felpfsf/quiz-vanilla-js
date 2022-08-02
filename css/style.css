@@ -43,9 +43,14 @@ body {
 
 .score-container {
   text-align: center;
-  width: 300px;
+  width: 450px;
   margin: 50px auto;
   /* border: 1px solid; */
+}
+
+.score-container h2 {
+  font-family: var(--ffamily-title);
+  font-size: 3.2rem;
 }
 
 .score-container p {
@@ -169,12 +174,17 @@ body {
   .score-container {
     width: 90%;
   }
+
+  .score-container h2 {
+    font-size: 2.4rem;
+  }
+
   .quiz-container {
     width: 100%;
     border: none;
   }
+
   .answers-box button {
     width: 100%;
   }
-
 }
